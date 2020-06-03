@@ -11,7 +11,7 @@ module.exports = async function(command, argv) {
 
 	let cwd = resolve(argv.cwd);
 
-	let orup = `${resolve(require.resolve('orup/package.json'), './../../', '.bin/orup')}`;
+	let orup = `${require.resolve('./../../node_modules/.bin/orup')}`;
 	let cmd = `${orup} ${command}`, args = [];
 
 	if(argv.config){

@@ -40,7 +40,7 @@ module.exports = plop => {
 
     try {
       result = spawn.sync(
-        `npm run ${require.resolve('../../../node_modules/prettify')} -- "${folderPath}"`,
+        `npm run ${require.resolve('./../../../node_modules/prettify')} -- "${folderPath}"`,
         { stdio: 'inherit' }
       );
       return folderPath;

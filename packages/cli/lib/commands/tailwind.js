@@ -19,7 +19,7 @@ module.exports = async function(command, argv) {
 		);
 	}
 
-	let cmd = `${resolve(require.resolve('tailwindcss/package.json'), './../../', '.bin/tailwind')}`;
+	let cmd = `${require.resolve('./../../node_modules/.bin/tailwind')}`;
 
 	let args = [];
 	switch (command) {
