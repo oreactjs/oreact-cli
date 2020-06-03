@@ -43,6 +43,7 @@
     "generator"
   ],
   "author": "Vinay Kevadiya <vinaykevadiaa@gmail.com>",
+  "homepage": "https://oreactjs.com/docs/cli/introduction",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^6.1.0",
@@ -91,5 +92,10 @@
   },
   "directories": {
     "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oreactjs/oreact-cli.git",
+    "directory": "packages/cli"
   }
 }

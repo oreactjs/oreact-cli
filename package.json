@@ -36,6 +36,7 @@
     "prettier": "^2.0.2",
     "rimraf": "^3.0.2"
   },
+  "homepage": "https://oreactjs.com/docs/cli/introduction",
   "author": "Vinay Kevadiya <vinaykevadiaa@gmail.com>",
   "license": "MIT",
   "husky": {
