@@ -11176,10 +11176,10 @@ original@^1.0.0:
   dependencies:
     url-parse "^1.4.3"
 
-orup@^1.4.8:
-  version "1.4.8"
-  resolved "https://registry.yarnpkg.com/orup/-/orup-1.4.8.tgz#0243ebd196811910b28b0d904c94b2da17dec17b"
-  integrity sha512-memo/9qp4WDOQ/VieN6dFLD/4MbFV2vurCO4SdDEUt72D0dPz56eJt1KrfuDCTzTuZqzX1jG/YXu6pvqtJpgkg==
+orup@^1.4.9:
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/orup/-/orup-1.4.9.tgz#8481f3728a680ba05cf5539112f853c99d70a259"
+  integrity sha512-ZsDCdGPcWkLU9n5hQimVu/0RnN6IZp3nSyZhaOTpBmCjCx1oJ9+V/O52SR3ZjqdxdRerm/cmfYAUKGo7GpqU2Q==
   dependencies:
     async "^2.6.0"
     axios "^0.17.1"
