@@ -1,0 +1,35 @@
+/**
+ *
+ * {{ properCase name }} page
+ *
+ */
+
+import React, {useEffect} from 'react';
+import {makeStyles} from '@material-ui/core/styles';
+import {PageHeader} from '@oreact/core/client';
+import clsx from 'clsx';
+
+const useStyles = makeStyles(theme => ({
+  containerRoot: {
+    // Write style
+  }
+}));
+
+const {{ properCase name }} = (props) => {
+  const classes = useStyles(props);
+
+  useEffect(() => {
+
+  }, []);
+
+  return (
+    <div className={clsx(classes.containerRoot)}>
+      <PageHeader>
+        <title>{{ properCase name }}</title>
+      </PageHeader>
+      <div>{{ properCase name }} page</div>
+    </div>
+  );
+};
+
+export default {{ properCase name }};

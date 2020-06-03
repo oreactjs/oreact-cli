@@ -1,0 +1,33 @@
+/*
+ * {{ properCase name }} Store
+ *
+ */
+
+import {observable, action} from 'mobx'
+
+class {{ properCase name }}Store {
+
+  @observable
+  {{ camelCase name }}Data = {
+    /* define data */
+  }
+
+  constructor(initialState) {
+    if (initialState) {
+      this.{{ camelCase name }}Data = initialState.{{ camelCase name }}Data;
+    }
+  }
+
+  @action
+  set{{ properCase name }}Data(stats) {
+    this.{{ camelCase name }}Data = {...this.{{ camelCase name }}Data, ...stats};
+  }
+
+  toJSON() {
+    return {
+      {{ camelCase name }}Data: this.{{ camelCase name }}Data
+    };
+  }
+}
+
+export default {{ properCase name }}Store;

@@ -1,0 +1,57 @@
+/**
+ *
+ * {{ properCase name }} config
+ *
+ */
+
+import loadable from "@oreact/core/loadable";
+{{#if wantStore}}
+import {{ properCase name }}Store from './store';
+{{/if}}
+
+export default {
+  settings: {
+    layout: {
+      style: "{{ layoutName }}",
+      config: {
+        mode: "fullwidth",
+        scroll: "content",
+        navbar: {
+          display: false
+        },
+        toolbar: {
+          display: false
+        },
+        footer: {
+          display: false
+        }
+      }
+    },
+    customScrollbars: true,
+    theme: {
+      main: "default",
+      navbar: "default",
+      toolbar: "default",
+      footer: "default"
+    }
+  },
+  routes: [
+    {
+      address: ["/{{ properCase name }}"],
+      exact: true,
+      navbar: {
+        "id": "{{ properCase name }}",
+        "title": "{{ properCase name }}",
+        "type": "collapse",
+        "icon": "apps"
+      },
+      component: loadable(() => import("./container"), { ssr: true })
+    }
+  ]
+  {{#if wantStore}}
+  ,
+  stores: {
+    {{ properCase name }}Store
+  }
+  {{/if}}
+};

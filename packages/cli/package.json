@@ -1,0 +1,95 @@
+{
+  "name": "oreact-cli",
+  "version": "0.1.6",
+  "description": "Oreact CLI toolkit for amazing developer experience",
+  "main": "lib/index.js",
+  "bin": {
+    "oreact": "lib/index.js"
+  },
+  "scripts": {
+    "pretest": "rimraf ./tests/output",
+    "test": "jest --forceExit"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setup.js"
+    ],
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/tests/output",
+      "<rootDir>/tests/subjects"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/tests/output",
+      "<rootDir>/tests/subjects"
+    ]
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "lib",
+    "babel"
+  ],
+  "keywords": [
+    "oreact",
+    "init",
+    "setup",
+    "deploy",
+    "orup",
+    "cli",
+    "pwa",
+    "project",
+    "generator"
+  ],
+  "author": "Vinay Kevadiya <vinaykevadiaa@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "html-looks-like": "^1.0.2",
+    "jest": "^25.1.0",
+    "lerna": "^3.16.4",
+    "lint-staged": "^10.0.7",
+    "mkdirp": "^1.0.3",
+    "native-url": "0.3.1",
+    "ncp": "^2.0.0",
+    "node-sass": "^4.12.0",
+    "p-retry": "^4.1.0",
+    "polka": "^0.5.2",
+    "shelljs": "^0.8.3",
+    "sirv": "^1.0.0-next.2"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "cross-env": "5.2.0",
+    "cross-spawn-promise": "^0.10.1",
+    "envinfo": "^7.3.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "fs": "^0.0.1-security",
+    "gittar": "^0.1.0",
+    "glob": "^7.1.4",
+    "isomorphic-unfetch": "^3.0.0",
+    "kleur": "^3.0.3",
+    "lerna": "^3.16.4",
+    "lint-staged": "^10.0.7",
+    "ora": "^4.0.3",
+    "orup": "^1.4.8",
+    "plop": "^2.6.0",
+    "prettier": "^2.0.2",
+    "prettify": "^0.1.7",
+    "prompts": "^2.2.1",
+    "purgecss": "^1.4.0",
+    "razzle": "^3.0.0",
+    "rimraf": "^3.0.2",
+    "sade": "^1.4.1",
+    "tailwindcss": "^1.1.2",
+    "update-notifier": "^4.1.0",
+    "validate-npm-package-name": "^3.0.0",
+    "which": "^2.0.2"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
