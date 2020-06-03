@@ -10,7 +10,7 @@ const stdio = 'inherit';
 module.exports = async function(command, argv) {
 	let cwd = resolve(argv.cwd);
 	let modules = resolve(cwd, 'node_modules');
-console.log('start command');
+
 	if (!isDir(modules)) {
 		return error(
 			'No `node_modules` found! Please run `npm install` before continuing.',

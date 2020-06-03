@@ -1,6 +1,6 @@
 {
   "name": "oreact-cli",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "Oreact CLI toolkit for amazing developer experience",
   "main": "lib/index.js",
   "bin": {
@@ -23,9 +23,6 @@
       "<rootDir>/tests/output",
       "<rootDir>/tests/subjects"
     ]
-  },
-  "engines": {
-    "node": ">=8"
   },
   "files": [
     "lib",
@@ -97,5 +94,8 @@
     "type": "git",
     "url": "https://github.com/oreactjs/oreact-cli.git",
     "directory": "packages/cli"
+  },
+  "engines": {
+    "node": ">=8.10.0"
   }
 }
